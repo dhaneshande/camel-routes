@@ -1,1 +1,1 @@
-Sample file
+function Date() { [native code] }
