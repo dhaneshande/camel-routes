@@ -1,1 +1,1 @@
-function Date() { [native code] }
+Mon Nov 25 2019 20:03:37 GMT+0530 (India Standard Time)
