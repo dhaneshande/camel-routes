@@ -6,7 +6,7 @@
 			<simple>FilterNames</simple>
 		</setHeader>
 		<setHeader headerName="endpoint">
-			<simple>wmq:queue:QUEUE.8080</simple>
+			<simple>wmq:queue:QUEUE.3</simple>
 		</setHeader>
 		<to uri="wmq:queue:DEV.QUEUE.2"/>
 	</route>
