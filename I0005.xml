@@ -6,7 +6,7 @@
 			<simple>test</simple>
 		</setHeader>
 		<setHeader headerName="endpoint">
-			<simple>WM.dev.qUEUE.3</simple>
+			<simple>WM.dev.qUEUE.333</simple>
 		</setHeader>
 		<to uri="wmq:queue:DEV.QUEUE.2"/>
 	</route>
