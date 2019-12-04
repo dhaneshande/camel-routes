@@ -3,6 +3,6 @@
 	<route id="I0007">
 		<from uri="wmq:queue:DEV.QUEUE.1?selector=scenarioId%3D'I0007'" />
 		<marshal ref="baseWith64"/>
-		<to uri="DEV.QUEUE.3"/>
+		<to uri="wmq:queue:DEV.QUEUE.3"/>
 	</route>
 </routes>
