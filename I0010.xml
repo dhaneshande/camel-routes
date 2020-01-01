@@ -2,7 +2,12 @@
 <routes xmlns="http://camel.apache.org/schema/spring">
 	<route id="I0010">
 		<from uri="wmq:queue:Test.01?selector=scenarioId%3D'I0010'" />
-		<unmarshal ref="baseWith64">base64</unmarshal>
-		<to uri="wmq:queue:Test.01"/>
+		<setHeader name="mapName">
+			<simple>test_map</simple>
+		</setHeader>
+		<setHeader name="endpoint">
+			<simple>wmq:queue:Test.04</simple>
+		</setHeader>
+		<to uri="Test.02"/>
 	</route>
 </routes>
