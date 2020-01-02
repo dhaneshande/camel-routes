@@ -3,7 +3,7 @@
 	<route id="I0007">
 		<from uri="wmq:queue:Test.01?selector=scenarioId%3D'I0007'" />
 		<setHeader name="mapName">
-			<simple>address_map</simple>
+			<simple>map_addresss</simple>
 		</setHeader>
 		<setHeader name="endpoint">
 			<simple>wmq:queue:Test.07</simple>
