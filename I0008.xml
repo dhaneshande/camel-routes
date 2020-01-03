@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <routes xmlns="http://camel.apache.org/schema/spring">
 	<route id="I0008">
-		<from uri="wmq:queue:DEV.QUEUE.1?selector=scenarioId%3D'I0008'" />
-		<setHeader headerName="mapName">
-			<simple>Upper_Map</simple>
+		<from uri="wmq:queue:DEV.TEST.01?selector=scenarioId%3D'I0008'" />
+		<setHeader name="mapName">
+			<simple>UpperMap</simple>
 		</setHeader>
-		<setHeader headerName="endpoint">
-			<simple>wmq:queue:DEV.QUEUE.4</simple>
+		<setHeader name="endpoint">
+			<simple>wmq:queue:TEST.QUEUE.01</simple>
 		</setHeader>
-		<to uri="wmq:queue:DEV.QUEUE.2"/>
+		<to uri="Test.03"/>
 	</route>
 </routes>
