@@ -2,6 +2,6 @@
 <routes xmlns="http://camel.apache.org/schema/spring">
 	<route id="I0001">
 		<from uri="wmq:queue:DEV.QUEUE.1?selector=scenarioId%3D'I0001'" />
-		<to uri="wmq:queue:DEV.QUEUE.1"/>
+		<to uri="wmq:queue:DEV.QUEUE.4"/>
 	</route>
 </routes>
