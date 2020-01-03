@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <routes xmlns="http://camel.apache.org/schema/spring">
 	<route id="I0009ITX">
-		<from uri="wmq:queue:DEV.QUEUE.2" />
+		<from uri="Test.03" />
 		<process ref="iTXProcessor" />
 		<recipientList>
 			<header>endpoint</header>
