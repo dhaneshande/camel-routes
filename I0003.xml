@@ -6,7 +6,7 @@
 			<simple>Upper_Map</simple>
 		</setHeader>
 		<setHeader name="endpoint">
-			<simple>wmq:queue:DEV.QUEUE.2</simple>
+			<simple>wmq:queue:DEV.QUEUE.3</simple>
 		</setHeader>
 		<to uri="wmq:queue:DEV.QUEUE.2"/>
 	</route>
