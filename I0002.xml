@@ -2,6 +2,12 @@
 <routes xmlns="http://camel.apache.org/schema/spring">
 	<route id="I0002">
 		<from uri="wmq:queue:DEV.QUEUE.1?selector=scenarioId%3D'I0002'" />
-		<to uri="wmq:queue:DEV.QUEUE.4"/>
+		<setHeader name="mapName">
+			<simple>Upper_Map</simple>
+		</setHeader>
+		<setHeader name="endpoint">
+			<simple>wmq:queue:DEV.QUEUE.4</simple>
+		</setHeader>
+		<to uri="wmq:queue:DEV.QUEUE.2"/>
 	</route>
 </routes>
